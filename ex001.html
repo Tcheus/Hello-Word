@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE htm>
 <html lang='pt-br'>
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,17 @@
  <script>
      window.alert('MINHA PRIMEIRA MENSAGEM!') // 'Janelas de perguntas'
      window.confirm('Esta gostando de JS?') // 'Janelas de perguntas'
-     window.prompt('Qual o seu nome?') // 'Janelas de perguntas'
+     var nome = window.prompt('Qual o seu nome?') // 'Janelas de perguntas'
+     window.alert(`É um enorme prazer em te conhecer, ${nome}` ) // Conectação!
+     var n1 = Number(window.prompt('Digite um número'))
+     var n2 = Number(window.prompt('Digite outro número'))
+     var s = n1 + n2
+     window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Conectação!
+     // (number + number) para adição
+     // (string + string) Conectação
+     document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em Maiuscula é ${nome.toUpperCase()} <br/> `)
+        document.write(`Seu nome em Minuscula é ${nome.toLocaleLowerCase()}`)
  </script>
 </body>
-</html>
+</html> 
